@@ -10,9 +10,6 @@ import Default from './components/Default';
 import Modal from './components/Modal';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

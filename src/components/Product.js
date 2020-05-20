@@ -5,9 +5,7 @@ import {ProductConsumer} from '../context';
 import PropTypes from 'prop-types';
 
 class Product extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
     render() {
       const {id, title, img, price, inCart} = this.props.product;
       return (

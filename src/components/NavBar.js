@@ -5,10 +5,7 @@ import ButtonContainer from './Button';
 import styled from 'styled-components';
 
 class NavBar extends React.Component {
-    constructor(props) {
-      super(props);
-    }
-  
+
     render() {
       return (
      <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">

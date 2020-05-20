@@ -4,9 +4,6 @@ import {Link} from 'react-router-dom';
 import ButtonContainer from './Button';
 
 class Details extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   
   render() {
     return (
@@ -41,16 +38,16 @@ class Details extends React.Component {
           {info}
           </p> 
           <div>
-            <Link to="/">
-              <ButtonContainer>
-                back to products
-              </ButtonContainer>
-            </Link>
-            <ButtonContainer cart disabled={inCart ? true : false} onClick={()=>{
-              value.addToCart(id); value.openModal(id)
-            }}>
-              {inCart ? 'inCart' : 'add to cart'}
-            </ButtonContainer>
+          <Link to="/">
+          <ButtonContainer>
+          back to products
+          </ButtonContainer>
+          </Link>
+          <ButtonContainer cart disabled={inCart ? true : false} onClick={()=>{
+            value.addToCart(id); value.openModal(id)
+          }}>
+          {inCart ? 'inCart' : 'add to cart'}
+          </ButtonContainer>
           </div>
           </div>
           </div>
