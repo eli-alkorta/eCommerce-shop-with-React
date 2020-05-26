@@ -28,8 +28,8 @@ class Product extends React.Component {
              {title}
            </p>
            <h5 className="text-blue font-italic mb-0">
-             {price}
-             <span className="mr-1">€</span>
+           <span className="mr-1">£</span>
+            {price}            
            </h5>
          </div>
        </div>
@@ -59,11 +59,12 @@ class Product extends React.Component {
   }
   &:hover{
     .card{
-      border: 0.04rem solid rgba(0,0,0,0.2);
-      box-shadow: 2px 2px 5px 0px rgbs(0,0,0,0.2);
+      border: 0.06rem solid var(--lightBlue);
+      box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
     }
     .card-footer{
       background: rgb(247,247,247);
+      border-left: 0.06rem solid var(--lightBlue);
     }
   }
   .img-container{
@@ -83,7 +84,7 @@ class Product extends React.Component {
     padding: 0.2rem 0.4rem;
     background: var(--lightBlue);
     border: none;
-    color: var(--mainWhite);
+    color: white;
     font-size: 1.4rem;
     border-radius: 0.5rem 0 0 0;
     transform: translate(100%, 100%);
@@ -93,7 +94,8 @@ class Product extends React.Component {
     transform: translate(0, 0);   
   }
   .cart-btn:hover{
-    color: var(--mainBlue);
+    background: var(--mainBlue);
+    color: white;
     cursor: pointer;
   }
   

@@ -4,7 +4,7 @@ class CartColumns extends React.Component {
  
    render() {
      return (
-    <div className="container-fluid text-center d-none d-lg-block">
+    <div className="container-fluid text-center d-none d-lg-block mt-1 mb-1">
       <div className="row">
          <div className="col-10 mx-auto col-lg-2">
             <p className="text-uppercase">products</p>

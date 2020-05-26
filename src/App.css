@@ -1,9 +1,9 @@
 :root{
-    --mainBlue: #2a2a72;
-    --lightBlue: #009ffd;
-    --mainWhite: #f3f3f3;
+    --mainBlue: #663300;
+    --lightBlue: #CC7722;
+    --mainWhite: #e5dedb;
     --mainDark: #232528;
-    --mainYellow: #ffa400;
+    --mainYellow: #EF820D;
 }
 body{
     font-family: "Oswald", sans-serif !important;
@@ -11,12 +11,12 @@ body{
     color: var(--mainDard) !important;
 }
 .text-title{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Amatic SC', cursive;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
 }
 .text-blue{
-    color: var(--lightBlue);
+    color: var(--mainBlue);
 }
 .text-bright{
     color: var(--ligthBlue);
@@ -37,4 +37,11 @@ body{
     cursor: pointer;
     font-size: 1.2rem;
     color: var(--mainYellow);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+#footer-icon{
+    color: white;
+    font-size: 30px;
+}
+

@@ -9,7 +9,7 @@ class Details extends React.Component {
     return (
       <ProductConsumer>
       {(value)=>{
-        const {id, company, img, info, price, title, inCart} = value.detailProduct;
+        const {id, materials, height, width, img, info, price, title, inCart} = value.detailProduct;
         return (
           <div className="container py-5">
           <div className="row">
@@ -22,15 +22,26 @@ class Details extends React.Component {
           <img src={img} alt="product" className="img-fluid"/>
           </div>
           <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-          <h2>model : {title}</h2>
-          <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
-          made by : <span className="text-uppercase">{company}</span>
+          <h4 className="text-title text-uppercase text-muted mt-1 mb-3">
+          materials : <span className="text-capitalize">{materials}</span>
           </h4>
           <h4 className="text-blue">
           <strong>
-          price : {price}<span>€</span>
+          price : <span>£</span>{price}
           </strong>
           </h4>
+          <p className="text-capitalize font-weight-bold mt-3 mb-0">
+          height:
+          </p>
+          <p className="text-lowercase font-weight-normal">
+          {height}
+          </p>
+          <p className="text-capitalize font-weight-bold mt-3 mb-0">
+          width:
+          </p>
+          <p className="text-lowercase font-weight-normal">
+          {width}
+          </p>
           <p className="text-capitalize font-weight-bold mt-3 mb-0">
           some info about the product:
           </p>

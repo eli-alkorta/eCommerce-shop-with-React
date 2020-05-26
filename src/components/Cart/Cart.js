@@ -7,10 +7,17 @@ import CartList from './CartList';
 import CartTotals from './CartTotals';
 
 class Cart extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+        minHeight: "63vh"
+    };
+  }
   
   render() {
     return (
-      <section>
+      <section style={{minHeight: this.state.minHeight}}>
       <ProductConsumer>
       {(value)=>{
         const {cart} = value;

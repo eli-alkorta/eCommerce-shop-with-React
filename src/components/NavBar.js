@@ -16,7 +16,7 @@ Creative Commons (Attribution 3.0 Unported);
        <Link to="/">
        <img src={bulb} alt="shop" className="navbar-brand"/>
        </Link>
-       <ul className="navbar-nav align-items-center">
+       <ul className="navbar-nav ml-auto">
          <li className="nav-item ml-5">
            <Link to="/" className="nav-link">
              products
@@ -24,7 +24,7 @@ Creative Commons (Attribution 3.0 Unported);
          </li>
        </ul>
        <Link to="/cart" className="ml-auto">
-         <ButtonContainer>
+         <ButtonContainer headingCart>
            <span className="mr-2">
            <i className="fas fa-cart-plus"/>
            </span>
