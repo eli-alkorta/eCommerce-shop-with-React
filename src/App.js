@@ -8,6 +8,10 @@ import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
 import Modal from './components/Modal';
+import Blog from './components/Blog';
+import DetailMainPost from './components/Blog/DetailMainPost';
+import DetailFeaturedPost1 from './components/Blog/DetailFeaturedPost1';
+import DetailFeaturedPost2 from './components/Blog/DetailFeaturedPost2';
 
 class App extends React.Component {
 
@@ -19,6 +23,10 @@ class App extends React.Component {
        <Route exact path="/" component={ProductList}/>
        <Route path="/details" component={Details}/>
        <Route path="/cart" component={Cart}/>
+       <Route path="/blog" component={Blog}/>
+       <Route path="/detailmainpost" component={DetailMainPost}/>
+       <Route path="/detailfeaturedpost1" component={DetailFeaturedPost1}/>
+       <Route path="/detailfeaturedpost2" component={DetailFeaturedPost2}/>
        <Route component={Default}/>    
      </Switch>
      <Modal/>

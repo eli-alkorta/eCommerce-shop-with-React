@@ -16,13 +16,14 @@ Creative Commons (Attribution 3.0 Unported);
        <Link to="/">
        <img src={bulb} alt="shop" className="navbar-brand"/>
        </Link>
-       <ul className="navbar-nav ml-auto">
+       <ul className="navbar-nav d-flex d-xs-block ml-auto">
          <li className="nav-item ml-5">
            <Link to="/" className="nav-link">
              products
            </Link>
          </li>
        </ul>
+       <div className="ml-auto">
        <Link to="/cart" className="ml-auto">
          <ButtonContainer headingCart>
            <span className="mr-2">
@@ -31,6 +32,12 @@ Creative Commons (Attribution 3.0 Unported);
            my cart
          </ButtonContainer>
        </Link>
+       <Link to="/blog" className="nav-item ml-5">
+         <ButtonContainer headingCart>
+           blog
+         </ButtonContainer>
+       </Link>
+       </div>
      </NavWrapper>
       );
     }
