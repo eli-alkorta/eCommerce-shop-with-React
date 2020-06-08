@@ -64,7 +64,6 @@ class Product extends React.Component {
     }
     .card-footer{
       background: rgb(247,247,247);
-      border-left: 0.06rem solid var(--lightBlue);
     }
   }
   .img-container{
