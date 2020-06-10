@@ -3,7 +3,7 @@ export const storeProducts = [
     id: 1,
     title: "Messy hair lamp",
     img: "images/lamp-14a.png",
-    price: 1,
+    price: 280,
     materials: "branches, rope, glass and light bulb",
     height: "xx inches / xx cm",
     width: "xx inches / xx cm",
